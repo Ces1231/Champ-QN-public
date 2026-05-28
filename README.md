@@ -2,15 +2,16 @@
   <img src="logo.png" alt="CHAMP-QN Logo" width="420"/>
 </p>
 
-# CHAMP-QN
+<h1 align="center">CHAMP-QN</h1>
+<p align="center"><strong>Zero Trust Control Plane for Distributed Quantum Networks</strong></p>
 
-**Zero Trust Control Plane for Distributed Quantum Networks**
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Stage](https://img.shields.io/badge/Stage-Alpha-orange)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)
-![Quantum](https://img.shields.io/badge/Quantum-Qiskit%20Aer%20%7C%20IBM%20Quantum-6929c4)
-![NVIDIA Inception](https://img.shields.io/badge/NVIDIA-Inception%20Member-76b900?logo=nvidia&logoColor=white)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"/></a>
+  <img src="https://img.shields.io/badge/Stage-Alpha-orange" alt="Stage"/>
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue" alt="Platform"/>
+  <img src="https://img.shields.io/badge/Quantum-Qiskit%20Aer%20%7C%20IBM%20Quantum-6929c4" alt="Quantum"/>
+  <img src="https://img.shields.io/badge/NVIDIA-Inception%20Member-76b900?logo=nvidia&logoColor=white" alt="NVIDIA Inception"/>
+</p>
 
 > **Champtron Systems LLC is a member of the NVIDIA Inception Program.**
 
