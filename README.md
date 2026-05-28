@@ -6,7 +6,9 @@
 ![Stage](https://img.shields.io/badge/Stage-Alpha-orange)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)
 ![Quantum](https://img.shields.io/badge/Quantum-Qiskit%20Aer%20%7C%20IBM%20Quantum-6929c4)
-![NVIDIA Inception](https://img.shields.io/badge/NVIDIA-Inception%20Program-76b900?logo=nvidia)
+![NVIDIA Inception](https://img.shields.io/badge/NVIDIA-Inception%20Member-76b900?logo=nvidia&logoColor=white)
+
+> **Champtron Systems LLC is a member of the NVIDIA Inception Program.**
 
 > CHAMP-QN is a production-quality quantum network orchestration platform that implements Zero Trust security for distributed quantum infrastructure — 6-node quantum cluster, BB84 QKD, real-time topology, mTLS, and a tamper-evident audit chain.
 
@@ -152,15 +154,27 @@ Observability: Prometheus + Grafana (scraped from all services)
 
 ---
 
-## NVIDIA Roadmap
+## NVIDIA Inception Program
 
-CHAMP-QN is built to leverage GPU-accelerated quantum simulation:
+**Champtron Systems LLC is a member of the NVIDIA Inception Program.**
 
-- **cuQuantum integration** — replace Qiskit Aer's CPU simulator with NVIDIA cuQuantum for high-fidelity multi-qubit circuit execution at scale
-- **CUDA Quantum** — port node-agent circuit execution to CUDA-Q for hybrid classical-quantum workloads
-- **GPU-accelerated fidelity modeling** — real-time entanglement fidelity prediction across large network topologies using tensor network simulation on GPU
+> NVIDIA Inception is a program designed to nurture startups revolutionizing industries with technology advancements. Membership does not imply endorsement, certification, or funding by NVIDIA.
 
-CHAMP-QN is a member of the **NVIDIA Inception Program**.
+---
+
+## NVIDIA Acceleration Roadmap
+
+CHAMP-QN plans to evaluate NVIDIA GPUs and NVIDIA AI software for accelerated quantum simulation, telemetry analysis, anomaly detection, and AI-assisted operational decision support.
+
+| Candidate Technology | Planned Application |
+|---|---|
+| **CUDA / cuQuantum** | Replace Qiskit Aer CPU simulator with GPU-accelerated quantum circuit execution for high-fidelity multi-qubit entanglement modeling at scale |
+| **CUDA-Q (CUDA Quantum)** | Port node-agent circuit execution to hybrid classical-quantum workloads on NVIDIA GPUs |
+| **RAPIDS** | GPU-accelerated telemetry analytics and entanglement quality time-series processing |
+| **TensorRT / Triton Inference Server** | Accelerated inference for anomaly detection models on live quantum network event streams |
+| **NVIDIA NIM** | AI microservices for real-time policy recommendation and intent prediction in the orchestrator |
+| **NVIDIA AI Enterprise** | Production-grade AI runtime for zero trust decision support and audit chain analysis |
+| **Jetson (Edge AI)** | Deploy lightweight quantum node agents to Jetson edge platforms for field-deployable quantum network nodes |
 
 ---
 
