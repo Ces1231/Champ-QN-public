@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d1b2e"/>
+      <stop offset="100%" stop-color="#040c18"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="46%" r="42%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="nodeGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="centerGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="qnGlow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Clip to circle so nothing bleeds outside -->
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="196"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#00d4ff" stroke-width="0.6" stroke-opacity="0.25"/>
+
+  <!-- Everything clipped inside the circle -->
+  <g clip-path="url(#circleClip)">
+
+    <!-- Ambient glow behind network -->
+    <circle cx="200" cy="128" r="105" fill="url(#coreGlow)"/>
+
+    <!-- ── Network (center 200,128 — hex radius 80) ── -->
+    <!-- Top:200,48 | TR:269,88 | BR:269,168 | B:200,208 | BL:131,168 | TL:131,88 -->
+
+    <!-- Edge lines -->
+    <g stroke="#00d4ff" stroke-opacity="0.15" stroke-width="1" fill="none">
+      <line x1="200" y1="48"  x2="269" y2="88"/>
+      <line x1="269" y1="88"  x2="269" y2="168"/>
+      <line x1="269" y1="168" x2="200" y2="208"/>
+      <line x1="200" y1="208" x2="131" y2="168"/>
+      <line x1="131" y1="168" x2="131" y2="88"/>
+      <line x1="131" y1="88"  x2="200" y2="48"/>
+      <line x1="200" y1="48"  x2="269" y2="168"/>
+      <line x1="200" y1="48"  x2="131" y2="168"/>
+      <line x1="269" y1="88"  x2="131" y2="168"/>
+      <line x1="269" y1="88"  x2="200" y2="208"/>
+      <line x1="131" y1="88"  x2="269" y2="168"/>
+      <line x1="131" y1="88"  x2="200" y2="208"/>
+    </g>
+
+    <!-- Spokes to center -->
+    <g stroke="#00d4ff" stroke-opacity="0.30" stroke-width="1.2" fill="none">
+      <line x1="200" y1="48"  x2="200" y2="128"/>
+      <line x1="269" y1="88"  x2="200" y2="128"/>
+      <line x1="269" y1="168" x2="200" y2="128"/>
+      <line x1="200" y1="208" x2="200" y2="128"/>
+      <line x1="131" y1="168" x2="200" y2="128"/>
+      <line x1="131" y1="88"  x2="200" y2="128"/>
+    </g>
+
+    <!-- Outer nodes -->
+    <g filter="url(#nodeGlow)">
+      <circle cx="200" cy="48"  r="7.5" fill="#0d1b2e" stroke="#00d4ff" stroke-width="2"/><circle cx="200" cy="48"  r="3" fill="#00d4ff"/>
+      <circle cx="269" cy="88"  r="7.5" fill="#0d1b2e" stroke="#00d4ff" stroke-width="2"/><circle cx="269" cy="88"  r="3" fill="#00d4ff"/>
+      <circle cx="269" cy="168" r="7.5" fill="#0d1b2e" stroke="#00d4ff" stroke-width="2"/><circle cx="269" cy="168" r="3" fill="#00d4ff"/>
+      <circle cx="200" cy="208" r="7.5" fill="#0d1b2e" stroke="#00d4ff" stroke-width="2"/><circle cx="200" cy="208" r="3" fill="#00d4ff"/>
+      <circle cx="131" cy="168" r="7.5" fill="#0d1b2e" stroke="#00d4ff" stroke-width="2"/><circle cx="131" cy="168" r="3" fill="#00d4ff"/>
+      <circle cx="131" cy="88"  r="7.5" fill="#0d1b2e" stroke="#00d4ff" stroke-width="2"/><circle cx="131" cy="88"  r="3" fill="#00d4ff"/>
+    </g>
+
+    <!-- Center node -->
+    <g filter="url(#centerGlow)">
+      <circle cx="200" cy="128" r="18"  fill="#0d1b2e" stroke="#00d4ff" stroke-width="2.5"/>
+      <circle cx="200" cy="128" r="10"  fill="#00d4ff" fill-opacity="0.12" stroke="#00d4ff" stroke-width="1.5"/>
+      <circle cx="200" cy="128" r="5"   fill="#00d4ff"/>
+    </g>
+
+    <!-- Divider -->
+    <line x1="52" y1="232" x2="348" y2="232" stroke="#00d4ff" stroke-width="0.8" stroke-opacity="0.35"/>
+
+    <!-- CHAMP -->
+    <text
+      x="200" y="285"
+      text-anchor="middle"
+      font-family="'Helvetica Neue', Arial, sans-serif"
+      font-weight="800"
+      font-size="58"
+      letter-spacing="9"
+      fill="#ffffff"
+      filter="url(#textGlow)"
+    >CHAMP</text>
+
+    <!-- QN -->
+    <text
+      x="200" y="337"
+      text-anchor="middle"
+      font-family="'Helvetica Neue', Arial, sans-serif"
+      font-weight="900"
+      font-size="42"
+      letter-spacing="16"
+      fill="#00d4ff"
+      filter="url(#qnGlow)"
+    >QN</text>
+
+    <!-- Tagline -->
+    <text
+      x="200" y="362"
+      text-anchor="middle"
+      font-family="'Helvetica Neue', Arial, sans-serif"
+      font-weight="300"
+      font-size="9"
+      letter-spacing="4"
+      fill="#00d4ff"
+      fill-opacity="0.55"
+    >QUANTUM NETWORK</text>
+
+  </g><!-- end clip -->
+
+  <!-- Outer border ring (drawn on top, outside clip) -->
+  <circle cx="200" cy="200" r="198" fill="none" stroke="#00d4ff" stroke-width="1" stroke-opacity="0.4"/>
+
+</svg>
