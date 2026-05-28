@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="CHAMP-QN Logo" width="420"/>
+  <img src="logo.svg" alt="CHAMP-QN Logo" width="420"/>
 </p>
 
 <h1 align="center">CHAMP-QN</h1>
