@@ -187,7 +187,7 @@ This repository contains the public product overview. Source code is available u
 To request access, a demo, or a partnership discussion:
 
 **Carnell Smith**
-carnell.smith@gotyto.com
+carnell.smith@champtron-systems.com
 
 ---
 
