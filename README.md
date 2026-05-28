@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="CHAMP-QN Logo" width="180"/>
+</p>
+
 # CHAMP-QN
 
 **Zero Trust Control Plane for Distributed Quantum Networks**
